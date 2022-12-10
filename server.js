@@ -62,8 +62,7 @@ server.get("/profile", auth, (req, res) => {
 
 server.post("/login", async (req, res) => {
   try {
-    console.log(req.body);
-    console.log(res);
+    console.log(req.body,'res');
     const { email, password } = req.body;
 
     const status = 401;
@@ -93,6 +92,7 @@ server.post("/login", async (req, res) => {
     }
   } catch (error) {
     console.log("error ", error);
+    
     res.status(500).json({ error: "Server Error" });
   }
 });
@@ -100,7 +100,7 @@ server.post("/login", async (req, res) => {
 server.post("/register", async (req, res) => {
   try {
     const user = req.body;
-
+    console.log(req, 'req')
     if (!(user.email && user.password)) {
       return res.status(400);
     }
