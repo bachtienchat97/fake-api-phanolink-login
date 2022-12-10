@@ -87,7 +87,7 @@ server.post("/login", async (req, res) => {
 
       res
         .status(200)
-        .json({ email: { email } ,accessToken, expiresIn: EXPIRES_IN, tokenType: TOKEN_TYPE });
+        .json({accessToken, expiresIn: EXPIRES_IN, tokenType: TOKEN_TYPE });
     } else {
       res.status(status).json({ status, message });
     }
