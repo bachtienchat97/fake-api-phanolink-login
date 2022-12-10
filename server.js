@@ -62,7 +62,8 @@ server.get("/profile", auth, (req, res) => {
 
 server.post("/login", async (req, res) => {
   try {
-    console.log(req.body)
+    console.log(req.body);
+    console.log(res);
     const { email, password } = req.body;
 
     const status = 401;
@@ -86,7 +87,7 @@ server.post("/login", async (req, res) => {
 
       res
         .status(200)
-        .json({ email: { emai } ,accessToken, expiresIn: EXPIRES_IN, tokenType: TOKEN_TYPE });
+        .json({ email: { email } ,accessToken, expiresIn: EXPIRES_IN, tokenType: TOKEN_TYPE });
     } else {
       res.status(status).json({ status, message });
     }
