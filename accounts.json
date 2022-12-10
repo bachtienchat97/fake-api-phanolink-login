@@ -9,5 +9,23 @@
   {
     "email": "bachchat3@gmail.com",
     "password": "$2b$10$17croU4hUsgq3.55vGuIyuqiFv8kcHQAYlw.1/F78FUo5zrN3q2Z6"
+  },
+  {
+    "email": "bachchattest1@gmail.com",
+    "password": "$2b$10$ERpGgUG2QzFihfEXRnVvYO.ER5R1MdoiHt2stjwM5qz/QyXs2I4j2"
+  },
+  {
+    "email": "bachchat10@gmail.com",
+    "password": "$2b$10$EHFwlVdB7dZi/mdiM7IRt.s67WQXAEBW1scm.b5C7GYoz04Q6lQ4a",
+    "name": "tien chat"
+  },
+  {
+    "email": "bachchat11@gmail.com",
+    "password": "$2b$10$bjL/NLvLlNEBiOcoDJXrHutTgWuSi/ihFyQdRze83udsJx4wTmXB.",
+    "name": "bachchat"
+  },
+  {
+    "email": "bachchat12@gmail.com",
+    "password": "$2b$10$DcZV8kKjdEENJZuJA9rWT.4P8HaFuJ6xzVRN5lZfdtLi0PcrQ86Cq"
   }
 ]

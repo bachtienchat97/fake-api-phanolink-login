@@ -62,7 +62,6 @@ server.get("/profile", auth, (req, res) => {
 
 server.post("/login", async (req, res) => {
   try {
-    console.log(req.body,'res');
     const { email, password } = req.body;
 
     const status = 401;
@@ -83,10 +82,11 @@ server.post("/login", async (req, res) => {
       const accessToken = jwt.sign({ email }, SECRET_KEY, {
         expiresIn: EXPIRES_IN,
       });
+    const userName = accounts.find((item) => item.email === email);
 
       res
         .status(200)
-        .json({accessToken, expiresIn: EXPIRES_IN, tokenType: TOKEN_TYPE });
+        .json({ userName: userName.name, accessToken, expiresIn: EXPIRES_IN, tokenType: TOKEN_TYPE });
     } else {
       res.status(status).json({ status, message });
     }
