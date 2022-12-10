@@ -99,8 +99,8 @@ server.post("/login", async (req, res) => {
 
 server.post("/register", async (req, res) => {
   try {
-    const user = req.body;
     console.log(req, 'req')
+    const user = req.body;
     if (!(user.email && user.password)) {
       return res.status(400);
     }
